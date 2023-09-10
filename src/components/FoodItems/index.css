@@ -1,0 +1,21 @@
+.food-items-container{
+  padding-top:35px;
+  display:flex;
+  flex-wrap:wrap;
+  padding-left:165px;
+  padding-right:185px;
+  justify-content:space-between;
+  padding-bottom:32px;
+}
+
+@media screen and (max-width:576px){
+  .food-items-container{
+    flex-direction:column;
+    flex-wrap:nowrap;
+    padding-top:32px;
+    padding-left:24px;
+    padding-right:0px;
+    padding-bottom:24px;
+    justify-content:flex-start;
+  }
+}

@@ -1,0 +1,138 @@
+.cart-list-container{
+  list-style-type:none;
+  min-height: 504px;
+  flex-shrink: 0;
+  border: 1px solid var(--main-hover-light, rgba(11, 105, 255, 0.10));
+  background-color: #F9FBFE;
+  padding-top:32px;
+  padding-bottom:48px;
+  width:1110px;
+  margin:auto;
+  margin-top:48px;
+  margin-bottom:48px;
+}
+
+.list-header{
+  display:flex;
+  color: var(--light-blue-gray-600, #475569);
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+  margin-bottom:24px;
+}
+
+.item-header{
+  margin-left:120px;
+  margin-right:346px;
+}
+
+.quantity-header{
+  margin-right:346px;
+}
+
+
+.total-separator{
+  border:1px dashed #CBD2D9;
+  margin-left:32px;
+  margin-right:32px;
+  margin-bottom:32px;
+}
+
+.order-container{
+  margin-left:32px;
+  display:flex;
+}
+
+.order{
+  color: var(--basic-900, #3E4C59);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  margin-right:770px;
+}
+
+.order-total{
+  color: var(--basic-900, #3E4C59);
+  text-align: right;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  margin-bottom:32px;
+}
+
+.place-order-btn{
+  display: flex;
+  padding: 8px 16px;
+  flex-direction: column;
+  align-items:center;
+  gap: 8px;
+  border-radius: 8px;
+  background: #F7931E;
+  color: var(--light-base-white, #FFF);
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  border:none;
+  outline:none;
+  margin-left:920px;
+  margin-right:20px;
+}
+
+@media screen and (max-width:576px){
+  .cart-list-container{
+    min-height:450px;
+    padding-top:0px;
+    padding-bottom:0px;
+    width:100%;
+    margin:0px;
+    margin-top:32px;
+    margin-bottom:48px;
+    background-color:white;
+    border:none;
+  }
+
+  .list-header{
+    display:none;
+  }
+
+  .total-separator{
+    border:1px dashed #CBD2D9;
+    margin-left:24px;
+    margin-right:24px;
+    margin-bottom:24px;
+    width:315px;
+  }
+
+  .order-container{
+    margin-left:24px;
+  }
+  
+  .order{
+    font-size: 16px;
+    line-height: 24px; /* 133.333% */
+    margin-right:158px;
+  }
+  
+  .order-total{
+    font-size: 16px;
+    line-height: 24px; /* 133.333% */
+    margin-bottom:24px;
+  }
+  
+  .place-order-btn{
+    display: inline-flex;
+    margin-left:0px;
+    margin-right:24px;
+  }
+}

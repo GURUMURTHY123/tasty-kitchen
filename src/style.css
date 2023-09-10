@@ -1,0 +1,22 @@
+*{
+  box-sizing:border-box;
+  padding:0px;
+  margin:0px;
+}
+
+.loader{
+  height:80px;
+  width:80px;
+}
+
+@media screen and (max-width:576px){
+  .home-bg-container{
+    overflow-x:hidden;
+  }
+
+  .loader{
+    width:32px;
+    height:32px;
+  }
+}
+

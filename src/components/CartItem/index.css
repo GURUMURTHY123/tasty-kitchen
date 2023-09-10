@@ -1,0 +1,134 @@
+.cart-item-container{
+  display:flex;
+  align-items:center;
+  margin-left:32px;
+  margin-bottom:24px;
+}
+
+.cart-item-image-container{
+  display:flex;
+  margin-right:184px;
+}
+
+.cart-item-image{
+  width: 136px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  margin-right:16px;
+}
+
+.cart-item-name{
+  color: #183B56;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 120% */
+  letter-spacing: 0.2px;
+  align-self:center;
+  width:140px;
+}
+
+.item-add-subtract-container{
+  display:flex;
+  align-items:center;
+  margin-right:318px;
+}
+
+.item-quantity-button{
+  display: flex;
+  align-items: center;
+  gap: 5.625px;
+  border-radius: 2.25px;
+  border: 0.75px solid var(--light-blue-gray-600, #475569);
+  background-color:transparent;
+  margin-right:13px;
+  padding-left:6px;
+  padding-right:6px;
+  padding-top:4px;
+  padding-bottom:4px;
+}
+
+.cart-item-quantity{
+  color: var(--light-blue-gray-600, #475569);
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin-right:13px;
+}
+
+.cart-item-cost{
+  color: #FFA412;
+  font-family: 'DM Sans';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  margin-right:12px;
+  width:100px;
+}
+
+.mobile-cart-item-container{
+  display:none;
+}
+
+@media screen and (max-width:576px){
+
+  .mobile-cart-item-container{
+    display:flex;
+    margin-left:24px;
+    margin-bottom:24px;
+  }
+
+  .cart-item-container{
+    display:none;
+  }
+  
+  .cart-item-image{
+    width: 136px;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    margin-right:19px;
+  }
+
+  .cart-description-container{
+    align-self:center;
+  }
+
+  .cart-item-name{
+    font-size: 14px;
+    margin-bottom:11px;
+  }
+
+  .item-quantity-button{
+    margin-right:11px;
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:2px;
+    padding-bottom:2px;
+  }
+
+  .cart-item-quantity{
+    margin-right:11px;
+  }
+
+  .item-add-subtract-container{
+    display:flex;
+    align-items:flex-start;
+    margin-right:0px;
+    margin-bottom:11px;
+  }
+
+  .cart-item-cost{
+    margin-right:0px;
+    width:auto;
+  }
+  
+  .delete-button{
+    align-self:center;
+  }
+}

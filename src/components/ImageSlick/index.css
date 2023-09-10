@@ -1,0 +1,48 @@
+.carousel-bg-container{
+  margin-top:48px;
+  margin-bottom:64px;
+  padding-left:165px;
+  padding-right:169px;
+}
+
+.carousel-container{
+  margin:auto;
+  border-radius:8px;
+}
+
+.offer-image{
+  background-size:cover;
+  height:320px;
+  width:100%;
+}
+
+.slick-dots{
+  top:280px;
+}
+
+.slick-dots li.slick-active button:before{
+  color:white;
+}
+
+@media screen and (max-width:576px){
+  .carousel-bg-container{
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+  }
+
+  .carousel-container{
+    border-radius:0px;
+    margin:none;
+    
+  }
+
+  .offer-image{
+    height:250px;
+    
+  }
+
+  .slick-dots{
+    top:220px;
+  }
+}

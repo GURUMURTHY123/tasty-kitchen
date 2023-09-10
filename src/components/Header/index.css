@@ -1,0 +1,131 @@
+.header-nav-container{
+  height:96px;
+  background: var(--light-blue-gray-50, #F8FAFC);
+  width:100%;
+  display:flex;
+  align-items: center;
+  padding-left:165px;
+  padding-right:165px;
+  justify-content:space-between;
+  flex-shrink:0;
+}
+
+.nav-logo-container{
+  display:flex;
+  align-items: center;
+}
+
+.nav-website-logo{
+  width:53px;
+  height:43px;
+  margin-right:16px;
+}
+
+.nav-logo-text{
+  color: #F7931E;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: DM Sans;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+}
+
+.nav-link-element{
+  color: var(--light-blue-gray-700, #334155);
+  font-feature-settings: 'clig' off, 'liga' off;
+  /* Headline/05 */
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: -0.356px;
+  margin-right:32px;
+}
+
+.active-element{
+  color:#F7931E;
+}
+
+.nav-logout-btn{
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 8px;
+  background: #F7931E;
+  color: var(--light-base-white, #FFF);
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  outline:none;
+  border:none;
+}
+
+.mobile-nav-bg-container{
+  display:none;
+}
+
+@media screen and (max-width:576px){
+  .header-nav-container{
+    display:none;
+  }
+
+  .mobile-nav-bg-container{ 
+    display:block;
+    flex-shrink:0;
+    background: var(--light-blue-gray-50, #F8FAFC);
+  }
+
+  .mobile-nav-container{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    height:64px;
+    padding-left:24px;
+    padding-right:24px;
+  }
+
+  .nav-website-logo{
+    width:39px;
+    height:32px;
+    margin-right:8px;
+  }
+
+  .nav-logo-text{
+    font-size:16px;
+    line-height:24px;
+  }
+
+  .nav-link-container{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    padding-left:32px;
+    background-color:white;
+  }
+  
+  .nav-link-element{
+    margin-bottom:5px;
+    padding-top:19px;
+  }
+
+  .nav-logout-btn{
+    margin-bottom:15px;
+    margin-top:16px;
+    margin-right:87px;
+  }
+
+  .nav-remove-btn{
+    background-color:#334155;
+    color:white;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius:40px;
+    outline:none;
+    border:none;
+    font-size:14px;
+  }
+}
