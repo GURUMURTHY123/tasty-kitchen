@@ -1,3 +1,4 @@
-# tasty-kitchen
+# tasty-kitchen 
 
-[Edit on StackBlitz ⚡️](https://tasty-kitchen.stackblitz.io)
+Click on the below link 
+https://tasty-kitchen.stackblitz.io
