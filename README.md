@@ -1,3 +1,3 @@
 # tasty-kitchen
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/tasty-kitchen)
+[Edit on StackBlitz ⚡️](https://tasty-kitchen.stackblitz.io)
