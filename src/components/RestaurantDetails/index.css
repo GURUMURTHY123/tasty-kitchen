@@ -66,6 +66,27 @@
   padding-right:12px;
 }
 
+.search-container{
+  border:1px solid;
+  display:flex;
+  align-items:center;
+  margin-right:5px;
+  border-radius:8px;
+  padding-top:2px;
+  padding-right:2px;
+  padding-bottom:2px;
+}
+
+.sort-container{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.search-input{
+  font-size:20px;
+}
+
 @media screen and (max-width:576px){
   .restaurant-details-view-container{
     padding:24px;
@@ -96,5 +117,18 @@
     border:none;
     background-color:white;
     margin-left:5px;
+  }
+
+  .sort-container{
+    margin-top:8px;
+  }
+
+  .restaurant-sort-icon-container{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .search-input{
+    font-size:14px;
   }
 }

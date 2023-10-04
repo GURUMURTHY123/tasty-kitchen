@@ -29,7 +29,7 @@ const sortByOptions = [
 
 class Home extends Component{
 
-  state={offersDataList:[],restaurantDetailsList:[],activePage:1,activeOptionId:sortByOptions[0].optionId,apiStatus:apiStatusConstants.initial}
+  state={offersDataList:[],restaurantDetailsList:[],activePage:1,activeOptionId:sortByOptions[0].optionId,apiStatus:apiStatusConstants.initial, inputValue:""}
 
   updateActiveOptionId = activeOptionId => {
     this.setState({activeOptionId}, this.getRestaurantDetails)
@@ -37,6 +37,10 @@ class Home extends Component{
 
   updateActivePage = activePage => {
     this.setState({activePage}, this.getRestaurantDetails)
+  }
+
+  updateSearchInput = value =>{
+    this.setState({inputValue:value})
   }
 
   getCarouselImages = async () => {
@@ -117,10 +121,10 @@ class Home extends Component{
   }
 
   renderProductDetails = () => {
-    const {offersDataList, restaurantDetailsList, activeOptionId, activePage} = this.state
+    const {offersDataList, restaurantDetailsList, activeOptionId, activePage, inputValue} = this.state
     return (<>
       <ImageSlick offers={offersDataList} />
-      <RestaurantDetails restaurantDetailsList={restaurantDetailsList} activeOptionId={activeOptionId} sortByOptions={sortByOptions} updateActiveOptionId={this.updateActiveOptionId} activePage={activePage} updateActivePage={this.updateActivePage} />
+      <RestaurantDetails restaurantDetailsList={restaurantDetailsList} activeOptionId={activeOptionId} sortByOptions={sortByOptions} updateActiveOptionId={this.updateActiveOptionId} activePage={activePage} updateActivePage={this.updateActivePage} updateSearchInput={this.updateSearchInput} inputValue={inputValue} />
       <Footer />
       </>)
   }
