@@ -20,7 +20,7 @@ const ImageSlick = props => {
       <div className='carousel-container'>
         <Slider {...settings}>
           {offers.map(eachOffer=>(
-            <div id={eachOffer.id}>
+            <div id={eachOffer.id} key={eachOffer.id}>
               <img src={eachOffer.image_url} alt="offer-Image" className='offer-image' />
             </div>
           ))}

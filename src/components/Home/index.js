@@ -26,6 +26,8 @@ const sortByOptions = [
   },
 ]
 
+const closedTimings = ["20 PM", "21 PM", "22 PM", "23 PM", "24 PM"]
+
 
 class Home extends Component{
 
@@ -81,7 +83,8 @@ class Home extends Component{
     menuType: restaurant.menu_type,
     location: restaurant.location,
     opensAt: restaurant.opens_at,
-    groupByTime: restaurant.group_by_time
+    groupByTime: restaurant.group_by_time,
+    closedAt: closedTimings[Math.floor((Math.random()*10)/2)]
     })
 
   getRestaurantDetails = async () => {
