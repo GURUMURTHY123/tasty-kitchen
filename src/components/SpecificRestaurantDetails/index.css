@@ -169,3 +169,29 @@
     margin-bottom:4px;
   }
 }
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .restaurant-card{
+    padding-left:80px;
+  }
+
+  .specific-restaurant-image{
+    width:350px;
+    height:250px;
+  }
+
+  .specific-restaurant-name{
+    font-size: 30px;
+    line-height:38px; 
+  }
+  
+  .specific-restaurant-cuisine{
+    font-size: 16px;
+    line-height: 20px; 
+  }
+  
+  .specific-restaurant-location{
+    line-height: 22px;
+  }
+  
+}

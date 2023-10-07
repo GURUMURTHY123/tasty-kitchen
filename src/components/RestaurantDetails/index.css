@@ -133,5 +133,15 @@
   }
 }
 @media screen and (min-width:768px) and (max-width:992px){
-  
+  .restaurant-container-description{
+    flex-direction:column;
+  }
+
+  .restaurant-description{
+    margin-bottom:8px;
+  }
+
+  .restaurant-sort-icon-container{
+    justify-content:space-between;
+  }
 }

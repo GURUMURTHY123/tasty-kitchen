@@ -136,3 +136,40 @@
     margin-right:24px;
   }
 }
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .cart-list-container{
+    width:700px;
+  }
+
+  .list-header{
+    font-size:18px;
+    line-height: 22px; 
+  }
+  
+  .item-header{
+    margin-left:80px;
+    margin-right:230px;
+  }
+  
+  .quantity-header{
+    margin-right:180px;
+  }
+   
+  .order{
+    font-size: 20px;
+    line-height:25px; 
+    margin-right:400px;
+  }
+  
+  .order-total{
+    font-size: 20px;
+    line-height:25px;
+  }
+  
+  .place-order-btn{
+    line-height: 14px; 
+    margin-left:520px;
+    margin-right:10px;
+  }
+}
