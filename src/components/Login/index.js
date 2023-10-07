@@ -58,9 +58,9 @@ class Login extends Component{
     const {password, isValid, isVisible} = this.state
     return (<div className="input-container">
       <label htmlFor="form-password" className="label-element">PASSWORD</label>
-      <div style={{display:'flex', justifyContent:'space-between', alignItems:'center'}} className="input-element">
-        <input id="form-password" type={isVisible?'text':'password'} value={password} onChange={this.onChangePassword} style={{border:'none', outline:'none', backgroundColor:'var(--light-blue-gray-200, #E2E8F0)', paddingLeft:'8px'}} placeholder='rahul@2021' />
-        {isVisible?<BiHide style={{paddingRight:'8px'}} size='30' onClick={()=>{this.setState({isVisible:!(isVisible)})}}/>:<MdVisibility style={{paddingRight:'8px'}} size='30' onClick={()=>{this.setState({isVisible:!(isVisible)})}}/>}
+      <div className="input-element">
+        <input id="form-password" type={isVisible?'text':'password'} value={password} onChange={this.onChangePassword} style={{border:'none', outline:'none', backgroundColor:'var(--light-blue-gray-200, #E2E8F0)', paddingLeft:'8px', width:'80%'}} placeholder='rahul@2021' />
+        {isVisible ? <BiHide size={20} onClick={()=>{this.setState({isVisible:!(isVisible)})}}/>:<MdVisibility size={20} onClick={()=>{this.setState({isVisible:!(isVisible)})}}/>}
       </div>
       {isValid && <p className='invalid-text'>Please enter a valid Username & Password</p>}
     </div>)

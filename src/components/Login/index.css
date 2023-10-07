@@ -40,7 +40,7 @@
 .logo-text{
   color: #F7931E;
   font-feature-settings: 'clig' off, 'liga' off;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-size: 24px;
   font-style: italic;
   font-weight: 700;
@@ -50,7 +50,7 @@
 .form-heading{
   color: var(--light-blue-gray-900, #0F172A);
   text-align: center;
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-size: 30px;
   font-style: normal;
   font-weight:600;
@@ -67,7 +67,7 @@
 
 .label-element{
   color: var(--light-blue-gray-600, #475569);
-  font-family: DM Sans;
+  font-family: "DM Sans";
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -83,6 +83,10 @@
   outline:none;
   border:none;
   height:28px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-right:6px;
 }
 
 .login-button{
@@ -174,5 +178,17 @@
   .login-button{
     height:40px;
     padding:0px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+  .website-logo{
+    width:50px;
+    height:40px;
+  }
+
+  .logo-text{
+    font-size: 19px;
+    line-height:28px;
   }
 }
